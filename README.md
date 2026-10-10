@@ -41,11 +41,10 @@ Search for `CERTIFICATIONS & COURSEWORK`. You'll find a hidden block under Educa
 |---|---|
 | A skill | `class="chip"` inside the Skills section |
 | Work experience bullet | the first few words of the bullet |
-| Email address | `mailto:` (it appears in several places — change all) |
 | Highlight tiles under your name | `class="tile` |
 
 ## Rules for this site
 
-- No phone number, address or photo.
+- No phone number, email, contact links, address or photo.
 - No images or PDF embeds; text only.
 - Keep every edit as plain text inside `index.html` so it shows up with Ctrl + U.

@@ -40,9 +40,6 @@
     width:34px;height:34px;border-radius:50%;background:var(--black);color:var(--white);
     display:grid;place-items:center;font-style:normal;font-size:13px;letter-spacing:.04em
   }
-  .nav-right{display:flex;align-items:center;gap:14px}
-  .contact{background:var(--yellow);color:var(--black);border-radius:999px;padding:8px 18px;font-size:13px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;transition:transform .2s}
-  .contact:hover{transform:scale(1.05)}
   /* HERO */
   .hero{padding:130px 0 40px;position:relative}
   .ghost{
@@ -158,23 +155,11 @@
   .chip{background:var(--white);border-radius:999px;padding:9px 16px;font-size:14px;transition:background .25s,color .25s;cursor:default}
   .chip:hover{background:var(--black);color:var(--white)}
 
-  /* CTA */
-  .cta-wrap{padding:120px 0 40px;text-align:center}
-  .cta-wrap .label{margin-bottom:24px;display:block}
-  .talk{
-    display:block;background:var(--yellow);color:var(--black);border-radius:999px;
-    font-size:clamp(44px,9vw,120px);font-weight:500;letter-spacing:-.04em;padding:22px 20px;line-height:1.1;
-    transition:transform .4s cubic-bezier(.2,.8,.2,1)
-  }
-  .talk:hover{transform:scale(1.02)}
-  .mail{display:inline-block;margin-top:22px;font-size:18px;border-bottom:1px solid var(--black)}
 
   /* FOOTER */
   footer{background:var(--night);color:var(--white);padding:70px 0 30px;margin-top:80px;overflow:hidden}
   .f-top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
   .f-top h4{font-size:28px;font-weight:400;line-height:1.25;letter-spacing:-.01em}
-  .f-top .right{text-align:right}
-  .f-top .right span{display:block;color:#ababab;font-size:15px}
   .f-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
   .f-cols h5{font-size:15px;font-weight:400;color:#787878;margin-bottom:10px}
   .f-cols a,.f-cols p{display:block;font-size:14px;color:#e6e6e6;margin-bottom:6px}
@@ -206,10 +191,9 @@
     .tile{padding:18px}
     .tile.word b{font-size:21px;white-space:nowrap}
     .card,.proj{padding:26px}
-    .f-top .right{text-align:left}
   }
   @media print{
-    nav,.marquee,.cta-wrap,.ghost,.proj .big,.f-word{display:none!important}
+    nav,.marquee,.ghost,.proj .big,.f-word{display:none!important}
     .js .rv{opacity:1;transform:none}
     .fill .w{color:#000}
     section{padding-top:30px}
@@ -222,9 +206,6 @@
 <nav aria-label="Main">
   <div class="wrap nav-inner">
     <a href="#top" class="mark"><i>AS</i><span>Abid Shaikh</span></a>
-    <div class="nav-right">
-      <a class="contact" href="mailto:abidsh355@gmail.com">Contact</a>
-    </div>
   </div>
 </nav>
 
@@ -429,19 +410,12 @@
     </div>
   </section>
 
-  <div class="wrap cta-wrap rv">
-    <span class="label">Want to connect? <b>Get in touch.</b></span>
-    <a class="talk" href="mailto:abidsh355@gmail.com">Let's Talk</a>
-    <a class="mail" href="mailto:abidsh355@gmail.com">abidsh355@gmail.com</a>
-  </div>
-
 </main>
 
 <footer>
   <div class="wrap">
     <div class="f-top">
       <h4>Rule-based.<br>Risk-aware.<br>Always learning.</h4>
-      <div class="right"><span>Email</span><a href="mailto:abidsh355@gmail.com">abidsh355@gmail.com</a></div>
     </div>
     <div class="f-cols">
       <div><h5>Sections</h5><a href="#profile">Profile</a><a href="#experience">Experience</a><a href="#education">Education</a></div>
