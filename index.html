@@ -45,8 +45,8 @@
   .skip:focus{top:12px}
 
   /* NAV */
-  nav{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(255,255,255,.94);-webkit-backdrop-filter:saturate(1.4) blur(10px);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
-  nav.scrolled{border-bottom-color:var(--grey-2)}
+  .site-nav{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(255,255,255,.94);-webkit-backdrop-filter:saturate(1.4) blur(10px);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+  .site-nav.scrolled{border-bottom-color:var(--grey-2)}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;height:var(--nav-h);gap:20px}
   .mark{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16px;letter-spacing:-.01em;flex-shrink:0}
   .mark i{
@@ -247,7 +247,7 @@
     *,*::before,*::after{transition-duration:.01ms!important}
   }
   @media print{
-    nav,.marquee,.ghost,.proj .big,.f-word,.cta,.skip{display:none!important}
+    .site-nav,.marquee,.ghost,.proj .big,.f-word,.cta,.skip{display:none!important}
     .js .rv{opacity:1;transform:none}
     .fill .w{color:#000}
     section{padding-top:30px}
@@ -260,7 +260,7 @@
 
 <a href="#profile" class="skip">Skip to content</a>
 
-<nav aria-label="Main">
+<nav class="site-nav" aria-label="Main">
   <div class="wrap nav-inner">
     <a href="#top" class="mark" aria-label="Abid Shaikh, back to top"><i aria-hidden="true">AS</i><span>Abid Shaikh</span></a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links"><span class="bars" aria-hidden="true"></span>Menu</button>
@@ -579,7 +579,7 @@
 
   // Nav: border once scrolled, mobile menu, current-section highlight
   (function(){
-    var nav=document.querySelector('nav'), btn=document.querySelector('.menu-btn'), list=document.getElementById('nav-links');
+    var nav=document.querySelector('.site-nav'), btn=document.querySelector('.menu-btn'), list=document.getElementById('nav-links');
     var links=[].slice.call(list.querySelectorAll('a'));
 
     var t=false;
